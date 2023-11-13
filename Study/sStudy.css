@@ -1,0 +1,66 @@
+.head_0{
+    font-family:'Courier New', Courier, monospace
+}
+.data_0{
+    font-family:Arial, Helvetica, sans-serif;
+}
+#html{
+    border: 5px solid red;
+}
+#css{
+    border: 5px solid blue;
+}
+#js{
+    border: 5px solid green;
+}
+#html,#js,#css{
+    background-color: #ddd;
+    border-radius: 32px;
+    padding: 5px;
+    margin: 5%;
+}
+.head_1{
+    text-align: center;
+}
+.eye{
+    text-align: center;
+    font-size: 40px;
+}
+.data_2{
+    text-align:center;
+}
+.data_1{
+    font-size: 14px;
+    margin: 0 10% 10px;
+    transition: all 1.1s ease-in-out
+}
+.data_1:hover{
+    font-size: 15px;
+}
+.head_2{
+    margin: 0 10% 0;
+}
+.fff{
+    background-color: #ccc;
+    border-radius: 32px;
+    padding: 5px;
+    margin: 20px;
+}
+span.code {
+    background-color: #555;
+    color: #ccc;
+    font-family: monospace;
+    border-radius: 3px;
+    padding: 3px;
+}
+div.code {
+    background-color: #555;
+    color: #ccc;
+    font-family: monospace;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: left;
+}
+#shadow_pr{
+    text-shadow: 5px 5px 3px red;
+}
