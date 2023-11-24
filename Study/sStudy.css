@@ -64,3 +64,6 @@ div.code {
 #shadow_pr{
     text-shadow: 5px 5px 3px red;
 }
+table.Interaction, th, td {
+    border: 1px solid black;
+}

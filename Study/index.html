@@ -324,7 +324,7 @@
                     <p>Absolute:</p>
                     <p>px</p>
                     <p>relative:</p>
-                    <p>%, rem, em, deg(градусы)</p>
+                    <p>%, rem, em, deg(градусы), vh(viewport height)</p>
                     <h5>Owerflow & z-index</h5>
                     <p>During Positioning layers can get up incorrectly.</p>
                     <p>z-index sets namber layers up to 9999</p>
@@ -481,6 +481,40 @@
                     <p>flex items stand in flex container</p>
                     <p>and also Main axis and cross axis normal(on left, in down)</p>
                     <p>but they can be changed</p>
+                    <p><span class="code">play: flex;</span> and <span class="code">display: flex;</spanclass></p>
+                    <p>for orientation Main axis use:</p>   
+                    <p><span class="code">flex-direction: ...;</span></p>
+                    <ul>
+                        <li>row - from left to right</li>
+                        <li>row-reverse - from right to left</li>
+                        <li>column - from top to bottom</li>
+                        <li>column-reverse - from bottom to top</li>
+                    </ul>
+                    <p>for wrap in flex container use</p>
+                    <span class="code">flex-wrap: ...;</span>
+                    <ul>
+                        <li>nowrap - standart</li>
+                        <li>wrap - wrap allowed</li>
+                        <li>wrap-reverse - changed Cross axis</li>
+                    </ul>
+                    <p><span class="code">flex-flow: ...;</span> - it is direction + wrap</p>
+                    <h5>alignment</h5>
+                    <p>for container</p>
+                    <ol>
+                        <li>
+                            <p><span class="code">justifu-content: ...;</span></p>
+                            <ul>
+                                <li>flex-start - from the beginning Main axis</li>
+                                <li>flex-end - from the end Main axis</li>
+                                <li>center - center</li>
+                                <li>spase-between - beginning with beginning, end with end and the intervals are the same</li>
+                                <li>spase-around - same spase between all flex items</li>
+                            </ul>
+                        </li>
+                        <li>
+                            
+                        </li>
+                    </ol>
                 </div>
             </div> 
         </div>
@@ -490,6 +524,231 @@
             </div>
             <div>
 
+                <div class="fff">
+                    <div class="head_2">
+                        <h3>Variables</h3>
+                    </div>
+                    <div class="data_2">
+                        <span>let/var name = value;</span>
+                        <p>const - is constant</p>
+                        <h5>type data:</h5>
+                        <ul>
+                            <li>number(int)</li>
+                            <li>BigInt - add "n" on and.</li>
+                            <li>string</li>
+                            <li>boolean</li>
+                            <li>object</li>
+                        </ul>
+                    </div>
+                </div> 
+                <div class="fff">
+                    <div class="head_2">
+                        <h3>interactions(lite)</h3>
+                    </div>
+                    <div class="data_2">
+                        <table class="Interaction">
+                            <tr>
+                                <th>view</th>
+                                <th>description</th>
+                                <th>output</th>
+                            </tr>
+                            <tr>
+                                <td><span>alert('Hallo');</span></td>
+                                <td>notification</td>
+                                <td onclick="alert('Hallo');">click</td>
+                            </tr>
+                            <tr>
+                                <td><span>prompt(title, [default]);</span></td>
+                                <td>return value</td>
+                                <td onclick="prompt('title', ['fhfhfhfh']);">click</td>
+                            </tr>
+                            <tr>
+                                <td><span></span></td>
+                                <td></td>
+                                <td>click</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div> 
+                <div class="fff">
+                    <div class="head_2">
+                        <h3>transformations type values</h3>
+                    </div>
+                    <div class="data_2">
+                        <p>explicit: type(values)</p>
+                        <p>example: <span>number('10000');</span></p>
+                        <p>also instead of <span>Number(...)</span></p>
+                        <p>You can use +...</p>
+                        <p>example: <span>alert( +name );</span></p>
+                    </div>
+                </div> 
+                <div class="fff">
+                    <div class="head_2">
+                        <h3>Abbreviated arithmetic</h3>
+                    </div>
+                    <div class="data_2">
+                        <p><span class="code">a = a + c</span> Can be shortened how: <span class="code">a += c</span></p>
+                        <p>Increment: a++ (<span class="code">a = a + 1</span>)</p>
+                        <p>Decrement: a-- (<span class="code">a = a - 1</span>)</p>
+                    </div>
+                </div> 
+                <div class="fff">
+                    <div class="head_2">
+                        <h3>Bitwise operators</h3>
+                    </div>
+                    <div class="data_2">
+                        <ul>
+                            <li>AND(&)</li>
+                            <li>OR(|)</li>
+                            <li>XOR(^)</li>
+                            <li>NOT(~)</li>
+                            <li>LEFT SHIFT(<<)</li>
+                            <li>RIGHT SHIFT(>>)</li>
+                            <li>ZERO-FILL RIGHT SHIFT(>>>)</li>
+                        </ul>
+                    </div>
+                </div>  
+                <div class="fff">
+                    <div class="head_2">
+                        <h3>comparisons</h3>
+                    </div>
+                    <div class="data_2">
+                        <ul>
+                            <li>More(<)</li>
+                            <li>More or Equal(<=)</li>
+                            <li>Less(>)</li>
+                            <li>less or Equal(>=)</li>
+                            <li>Equal(==)</li>
+                            <li>don't Equal(!=)</li>
+                        </ul>
+                        <h5>comparisons with string</h5>
+                        <p><span class="code">a = "one" == "two"</span> for alphabetically</p>
+                        <p>also be strict equal <span class="code">===</span></p>
+                    </div>
+                </div>  
+                <div class="fff">
+                    <div class="head_2">
+                        <h3>"If"</h3>
+                    </div>
+                    <div class="data_2">
+                        <p>exemple: <span class="code">if(conditions){instructions}</span></p>
+
+                        <div class="code">
+                            <p>if(a == 100){</p>
+                            <p>alert('hi pidor')</p>    
+                            <p>}</p>
+                        </div>
+
+                        <p>also be else() it is midle</p>
+                        <p>and else if() it is end</p>
+
+                        <h5>exemple: </h5>
+
+                        <div class="code">
+                            
+                            <p>if(a <= 25){</p>
+                            <p>alert('lox')</p>
+                            <p>}</p>
+
+                            <p>else if(a <= 75){</p>
+                            <p>alert('Midle')</p>
+                            <p>}</p>
+                            
+                            <p>else(a <= 100){</p>
+                            <p>alert('Winer')</p>
+                            <p>}</p>
+
+                        </div>
+                        <h5>conditional operator "?"</h5>
+                        <p>form: <span class="code">let result = condition ? value1 : value2;</span></p>
+                        <p>exemple: <span class="code">let result = (a > 10) ? true : false;</span></p>
+                        <h5>switch</h5>
+                        <div class="code">
+                            <p>switch(a){</p>
+                            <p>case(a = 3):</p>
+                            <p>...</p>
+                            <p>break</p>
+                            <p>default:</p>
+                            <p>...</p>
+                            <p>break</p>
+                            <p>}</p>
+                        </div>
+
+                    </div>
+                </div>  
+                <div class="fff">
+                    <div class="head_2">
+                        <h3>Logical operators</h3>
+                    </div>
+                    <div class="data_2">
+                        <ul>
+                            <li>(||) - Or</li>
+                            <li>(||=) - Appropriating or(If result = 0 that condition executed)</li>
+
+                            <p>exempl: </p>
+
+                            <div class="code">
+                                <p>let data1 = 123465281</p>
+                                <p>let result = false</p>
+                                <p>let result ||= data1</p>
+                            </div>
+
+                            <li>(&&) - And</li>
+                            <li>(&&=) - Appropriating and</li>
+                            <li>(!) - Not</li>
+                            <li>(??) - zero merge</li>
+                            <li>(??=) - Assigns zero merge</li>
+                            <p>Assigns if a = null or undefined</p>
+                        </ul>
+                    </div>
+                </div>  
+                <div class="fff">
+                    <div class="head_2">
+                        <h3>Cycles</h3>
+                    </div>
+                    <div class="data_2">
+
+                        <h5>while</h5>
+                        <p>while(condition(s)){body}</p>
+                        <p>exemple:</p>
+                        <div class="code">
+                            <p>let a = 0;</p>
+                            <p>while(a < 10){</p>
+                            <p>alert('hi '+ a);</p>
+                            <p>a++;</p>
+                            <p>}</p>
+                        </div>
+
+                        <h5>do...while</h5>
+                        <p>like 'while' but condition(s) checked after complited body</p>
+
+                        <h5>for</h5>
+                        <p>for(variable declaration; comparison; action with variable){body}</p>
+                        <p>exempl: </p>
+                        <div class="code">
+                            <p>for(let a; a = 100; a++){</p>
+                            <p>console.log('hello')</p>
+                            <p>}</p>
+                        </div>
+                        <p>Also be </p>
+                        <ul>
+                            <li>break - out from cycle</li>
+                            <li>continue - jamp on next action</li>
+                        </ul>
+                        <p>ant points</p>
+                        <p>view that <span class="code">name: cycle</span></p>
+                        <span class="code">point1: for(...){...}</span>
+                        <p>with the help break you can jamp on point</p>
+                    </div>
+                </div>  
+                <div class="fff">
+                    <div class="head_2">
+                        
+                    </div>
+                    <div class="data_2">
+            
+                    </div>
+                </div> 
             </div>
         </div>
     </div>
