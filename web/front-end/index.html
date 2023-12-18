@@ -34,9 +34,9 @@
                             <p>Span uses for mark small part text.</p>
                             <p>Div is paragraph.</p>
                         </div>
-                    </div>ass="
+                    </div>
                 </div>
-                <div clfff">
+                <div class="fff">
                     <div class="head_2">
                         <h3>Lists</h3>
                     </div>
@@ -517,6 +517,27 @@
                     </ol>
                 </div>
             </div> 
+            <div class="fff">
+                <div class="head_2">
+                    <h3>Grid</h3>
+                </div>
+                <div class="data_2">
+                    <p><span class="code">display:grid</span> announcing container</p>
+                    <ul>
+                        <li><span class="code">grid-template-columns: S1 S2 S3 ...</span> : size and quantity columns</li>
+                        <li><span class="code">grid-template-rows: S1 S2 S3 ...</span> : size and quantity rows</li>
+                        <li><span class="code">grid-column-gap:</span> : space between columns</li>
+                        <li><span class="code">grid-row-gap:</span> </li>
+                        <li><span class="code">grid-gap</span> </li>
+                        <li>...fr : new unit of measurement that divides something whole</li>
+                        <li><span class="code">...: minmax(100, 500)</span> </li>
+                        <li><span class="code">grid-avto-flow: row/column</span> </li>
+                        <li><span class="code"></span> </li>
+                    </ul>
+                </div>
+            </div> 
+
+            </div>   
         </div>
         <div id="js">
             <div class="eye">
@@ -743,12 +764,127 @@
                 </div>  
                 <div class="fff">
                     <div class="head_2">
+                        <h3>function</h3>
+                    </div>
+                    <div class="data_2">
+                        <p>view</p>
+                        <span class="code">function name (arg-s){body}</span>
+                        <p>And also you can write this</p>
+                        <span class="code">let a = function (arg-s){body}</span>
+                        <p>Because functions is values and variables contain values</p>
+                        <p>return witing that <span class="code">return ...</span></p>
+                        <p>And also there are arrow functions</p>
+                        <p>they are written like this</p>
+                        <div class="code">
+                            <p>let name = (arg-s) => expression;</p>
+                        </div>
+                        <p>exemple:</p>
+                        <div class="code">
+                            <p>let sum = (a, b) => a + b;</p>
+                        </div>
+                        <p>Fakt: you can instead of one expression use <span class="code">=> {}</span></p>
+                    </div>
+                </div> 
+                <div class="fff">
+                    <div class="head_2">
+                        <h3>Objects</h3>
+                    </div>
+                    <div class="data_2">
+                        <p>like array</p>
+                        <p>announced : <span class="code">let name = {};</span> or <span class="code">let name = new Object();</span></p>
+                        <p>also each element close ","</p>
+                        <div class="code">
+                            <p>let arr = {</p>
+                            <p>a = "HI JOHN",</p>
+                            <p>b = 1234,</p>
+                            <p>}</p>
+                            <p>alert(arr.a)</p>
+                            <p>arr.e = prompt(Your name?)</p>
+                            <p>if (arr.e){</p>
+                            <p>delete arr.b</p>
+                            <p>}</p>
+                            <p></p>
+                        </div>
+                        <p><span>arr.a</span> - accesses to arr.a or creates if there is none</p>
+                        <p>And <span>delete arr.d</span></p>
+                        <p>and also element name can de write "More and more"</p>
+                        <p>But if you wont use verbose element you most <span class="code">[...]</span></p>
+                        <p>Exempl:</p>
+                        <span>arr[e] = 10</span>
+                        <p>And if there is a variable in [] that then the value of the variable will be substituted</p>
+                        <p>the "in" operator is checks be "before in" in "after in"</p>
+                        <span class="code">let a = a in arr</span>
+
+                        <h5>for in</h5>
+                        <p>for (let key in obj)</p>
+                        <p>exemple:</p>
+                        <div class="code">
+                            <p>let odj = {</p>
+                            <p>name: John,</p>
+                            <p>age: 10,</p>
+                            <p>pet: true,</p>
+                            <p>};</p>
+                            <p>for (let key in obj){</p>
+                            <p>alert(key);</p>
+                            <p>alert([key]);</p>
+                            <p>}</p>
+                        </div>
+                        <p>and all odject can have Methods(function)</p>
+                        <p>exemple</p>
+                        <div class="code">
+                            <p>let obj = {}</p>
+                            <p>function Shi () {</p>    
+                            <p>alert('hi')</p>    
+                            <p>}</p>    
+                            <p>obj.Shi = Shi()</p>
+                        </div>
+                        <h5>this</h5>
+                        <p>worth before dot and have link on the object </p>
+                        <h5>new</h5>
+                        <p>let nameObj = new func()</p>
+                        <p>this creat object with name 'name object' and inside like 'func'</p>
+                        <p>this is the constructor function</p>
+                        <h5>?.</h5>
+                        <p>use for enumerations of nested objects and if element == null or undefined</p>
+                        <span class="code">alert(John?.add?.srt)</span>
+                        <p>and if one of this elenent none alert print undefined and not error</p>
+
+                    </div>
+                </div>  
+                <div class="fff">
+                    <div class="head_2">
+                        <h3>Object wrapper</h3>
+                    </div>
+                    <div class="data_2">
+                        <p>It is object which creat for changing just type data by methods</p>
+                        <p>(without changing the data type)</p>
+                        <p><a href="https://learn.javascript.ru/number">and resors </a></p>
+                    </div>
+                    <div class="data_2-1">
+                        <header class="c">int</header>
+                        <div class="data_3">
+                            <p>when writing numbers symbol "_" use like coments</p>
+                            <p><span class="code">let a = 1_000_000; </span> = <span class="code">let a =1000000;</span></p>
+                            <hr>
+                            <p>when your number have a lot zero after,</p>
+                            <p>add your number "e" after and write number zero</p>
+                            <p><span class="code">let a = 10000;</span> = <span class="code">let a = 1e4;</span></p>
+                            <hr>
+                            <p>for show number in over SC for exemple "0x" (in 16)</p>
+                            <p><span>a = 0xff;</span> = <span>a = 0b11111111;</span></p>
+                            <p>0x - 16, 0b - 2; 0o - 8</p>
+                            <hr>
+                        </div>
+                    </div>
+                </div>  
+                <div class="fff">
+                    <div class="head_2">
                         
                     </div>
                     <div class="data_2">
             
                     </div>
-                </div> 
+                </div>  
             </div>
         </div>
     </div>
